@@ -1,0 +1,35 @@
+,train_cv_f1,val_cv_f1,accuracy,f1,roc_auc,stat_parity,equal_opp,equal_odds,avg_odds_diff,tpr,fpr,fnr,best_model
+XGB,0.9329913117786354,0.9059532070291249,0.8836158192090395,0.9162409379924918,0.9341414933538855,0.2783088125336644,0.09170053957599866,0.1234688225116181,0.08497038985777615,0.938613841514009,0.23196586682776718,0.061386158485991014,"Pipeline(steps=[('scaler', MinMaxScaler()),
+                ('clf',
+                 XGBClassifier(base_score=None, booster=None, callbacks=None,
+                               colsample_bylevel=None, colsample_bynode=None,
+                               colsample_bytree=None, device=None,
+                               early_stopping_rounds=None,
+                               enable_categorical=False, eval_metric='logloss',
+                               feature_types=None, feature_weights=None,
+                               gamma=None, grow_policy=None,
+                               importance_type=None,
+                               interaction_constraints=None, learning_rate=0.1,
+                               max_bin=None, max_cat_threshold=None,
+                               max_cat_to_onehot=None, max_delta_step=None,
+                               max_depth=3, max_leaves=None,
+                               min_child_weight=None, missing=nan,
+                               monotone_constraints=None, multi_strategy=None,
+                               n_estimators=100, n_jobs=None,
+                               num_parallel_tree=None, ...))])"
+LR,0.911493157774426,0.909025186087859,0.8802259887005649,0.9144880714842363,0.9211957475996698,0.2750925724887799,0.08328776427064317,0.12028719949623846,0.09106218355591134,0.9435236112204848,0.25310716330935706,0.0564763887795152,"Pipeline(steps=[('scaler', MinMaxScaler()),
+                ('clf',
+                 LogisticRegression(C=1, max_iter=2000, penalty='l1',
+                                    random_state=57, solver='liblinear'))])"
+GBM,0.9297348219395858,0.9055333863964024,0.87909604519774,0.9131184364598605,0.9299032959081801,0.2712133460774517,0.09716502045031561,0.12312274802295003,0.0773244691730664,0.9369718053892142,0.24209285934540328,0.06302819461078578,"Pipeline(steps=[('scaler', MinMaxScaler()),
+                ('clf', GradientBoostingClassifier(random_state=57))])"
+MLP,0.9107787917290009,0.9107787917290009,0.871186440677966,0.9094369590583912,0.9245237362057281,0.2764088938814301,0.08113315889992827,0.1483074663784009,0.109711167663965,0.9533748327204467,0.30233721610753456,0.04662516727955333,"PyTorchMLPWrapper(hidden_dim=32, input_dim=36, lr=0.01)"
+RF,0.9876616977143774,0.9079892609096435,0.8734463276836157,0.9091737980748369,0.9231492895492797,0.29779145856389005,0.13318938776413614,0.14864642527999716,0.11315293265998648,0.9349960291646052,0.25679800134669967,0.06500397083539484,"Pipeline(steps=[('scaler', MinMaxScaler()),
+                ('clf', RandomForestClassifier(max_depth=20, random_state=57))])"
+LGBM,0.9464410136408498,0.905081881221737,0.8723163841807908,0.9081301012487861,0.932146935637344,0.2935911989925215,0.13460351297192982,0.13460351297192982,0.10516071082089178,0.9301709385440912,0.24948397490355992,0.06982906145590884,"Pipeline(steps=[('scaler', MinMaxScaler()),
+                ('clf', LGBMClassifier(max_depth=10, random_state=57))])"
+DT,0.9750549610255708,0.8619480672234157,0.8418079096045199,0.8846143358789379,0.8025570278570294,0.2943238042016251,0.1589355791317271,0.1589355791317271,0.12346531744973772,0.8934846575968813,0.26735921010402314,0.10651534240311865,"Pipeline(steps=[('scaler', MinMaxScaler()),
+                ('clf',
+                 DecisionTreeClassifier(max_depth=10, min_samples_split=5,
+                                        random_state=57))])"
+NB,0.8764108057315987,0.8738991553883322,0.8327683615819209,0.8760504916471028,0.8777437297753723,0.24803856896644094,0.07416157406804276,0.12188462389741339,0.08257689755682908,0.8716870914529565,0.24999528025826426,0.12831290854704333,"Pipeline(steps=[('scaler', MinMaxScaler()), ('clf', GaussianNB())])"
