@@ -1,0 +1,38 @@
+,train_cv_f1,val_cv_f1,accuracy,f1,roc_auc,stat_parity,equal_opp,equal_odds,avg_odds_diff,tpr,fpr,fnr,best_model
+RF,0.9937489292147631,0.8371714883395593,0.7449118046132973,0.8324091438377152,0.7139915508036121,-0.2603528546924773,0.013197913197913228,0.44559884559884555,-0.21620046620046618,0.9212739345069392,0.6493927125506073,0.07872606549306083,"Pipeline(steps=[('scaler', MinMaxScaler()),
+                ('clf',
+                 RandomForestClassifier(max_depth=10, n_estimators=200,
+                                        random_state=57))])"
+MLP,0.8339511822151131,0.8339511822151131,0.7200361827227498,0.8127009894867038,0.7235763370210151,-0.3384791309319611,-0.24470806970806971,0.4224386724386724,-0.3335733710733711,0.8833812356126834,0.6446693657219972,0.11661876438731655,"PyTorchMLPWrapper(epochs=10, input_dim=47)"
+GBM,0.9049060829434806,0.8249239933552162,0.714985677672245,0.8032291561987069,0.7088540546875018,-0.273711508617169,-0.08068043068043067,0.48593073593073594,-0.2833055833055833,0.8472083616089843,0.5839856050382366,0.15279163839101567,"Pipeline(steps=[('scaler', MinMaxScaler()),
+                ('clf', GradientBoostingClassifier(random_state=57))])"
+LR,0.8505285860005283,0.8306684329046332,0.7150610583446403,0.8002190590377629,0.7343007516129084,-0.3404380734569414,-0.18143800643800645,0.4725829725829726,-0.3270104895104895,0.8272956502069112,0.5454790823211876,0.17270434979308877,"Pipeline(steps=[('scaler', MinMaxScaler()),
+                ('clf',
+                 LogisticRegression(C=1, max_iter=2000, penalty='l1',
+                                    random_state=57, solver='saga'))])"
+LGBM,0.9223835140107681,0.8272080387129561,0.7100105532941354,0.7962879701642667,0.724258279192319,-0.24342004955212504,-0.14565434565434565,0.37956487956487955,-0.24292096792096793,0.8370324537942597,0.5980206927575348,0.16296754620574028,"Pipeline(steps=[('scaler', MinMaxScaler()),
+                ('clf',
+                 LGBMClassifier(max_depth=20, n_estimators=50,
+                                random_state=57))])"
+XGB,0.9026059669075613,0.8265203113076908,0.7002864465551033,0.7911637454873839,0.6965722440840568,-0.2727490538811293,-0.31279276279276275,0.5311910311910312,-0.3351481851481852,0.8299103162881055,0.6061628430049483,0.1700896837118944,"Pipeline(steps=[('scaler', MinMaxScaler()),
+                ('clf',
+                 XGBClassifier(base_score=None, booster=None, callbacks=None,
+                               colsample_bylevel=None, colsample_bynode=None,
+                               colsample_bytree=None, device=None,
+                               early_stopping_rounds=None,
+                               enable_categorical=False, eval_metric='logloss',
+                               feature_types=None, feature_weights=None,
+                               gamma=None, grow_policy=None,
+                               importance_type=None,
+                               interaction_constraints=None, learning_rate=0.1,
+                               max_bin=None, max_cat_threshold=None,
+                               max_cat_to_onehot=None, max_delta_step=None,
+                               max_depth=3, max_leaves=None,
+                               min_child_weight=None, missing=nan,
+                               monotone_constraints=None, multi_strategy=None,
+                               n_estimators=50, n_jobs=None,
+                               num_parallel_tree=None, ...))])"
+NB,0.7139539541257941,0.6896340187913862,0.7246344037388813,0.7897595538044976,0.720696445916996,-0.4140168531677966,-0.1912615162615163,0.457070707070707,-0.32416611166611164,0.7471757614466489,0.3459289248762933,0.2528242385533512,"Pipeline(steps=[('scaler', MinMaxScaler()),
+                ('clf', GaussianNB(var_smoothing=1e-07))])"
+DT,0.9616791416465758,0.7583223507183432,0.6601839288406453,0.7442601723193386,0.6191520642917688,-0.20462577255030087,-0.10988455988455988,0.23181818181818184,-0.1414141414141414,0.718421087647865,0.4801169590643275,0.281578912352135,"Pipeline(steps=[('scaler', MinMaxScaler()),
+                ('clf', DecisionTreeClassifier(max_depth=20, random_state=57))])"

@@ -1,0 +1,12 @@
+,train_cv_f1,val_cv_f1,accuracy,f1,roc_auc,stat_parity,equal_opp,equal_odds,avg_odds_diff,tpr,fpr,fnr,best_model,best_parameter,stat_parity_sex,equal_opp_sex,equal_odds_sex,avg_odds_diff_sex,tpr_sex,fpr_sex,fnr_sex
+MLP,0.8161258783747968,0.8161258783747968,0.7803407206392281,0.8270057365802046,0.8691481979997387,-0.033744719520581556,-0.12554313502589362,0.31004150702426564,-0.012262308253687551,0.8453114579165,0.3075998075998076,0.15468854208350005,PyTorchMLPWrapper(input_dim=47),,,,,,,,
+RW,,,0.64,0.7804878048780488,0.6504991319444444,0.0,0.0,0.0,0.0,1.0,1.0,0.0,PyTorchMLPWrapper(input_dim=47),,,,,,,,
+PR_eta_25.0,,,0.77,0.8217054263565892,0.8360460069444444,0.00974658869395717,-0.18407766990291252,0.3441981747066493,0.0800602524018684,0.828125,0.3333333333333333,0.171875,<aif360.algorithms.inprocessing.prejudice_remover.PrejudiceRemover object at 0x7b29486b7b90>,25.0,,,,,,,
+DIR_rl_0.25,,,0.64,0.7804878048780488,0.6105685763888888,0.0,0.0,0.0,0.0,1.0,1.0,0.0,PyTorchMLPWrapper(input_dim=47),0.25,,,,,,,
+EGR_DemographicParity_eps_0.001,,,0.785,0.8365019011406845,0.7560763888888888,0.07634827810266398,-0.024077669902912602,0.23337679269882655,0.10464956139795697,0.8046875,0.3333333333333333,0.1953125,"ExponentiatedGradient(constraints=<fairlearn.reductions._moments.utility_parity.DemographicParity object at 0x7b2908272f90>,
+                      eps=0.001,
+                      estimator=LogisticRegression(random_state=57,
+                                                   solver='liblinear'),
+                      nu=np.float64(0.007124758465923391))",0.001,,,,,,,
+ADV_ep_20_bs_64,,,0.8,0.8461538461538461,0.8510199652777779,0.09486679662118258,-0.024077669902912602,0.2842242503259452,0.1300732902115163,0.8046875,0.3333333333333333,0.1953125,<aif360.algorithms.inprocessing.adversarial_debiasing.AdversarialDebiasing object at 0x7b28dc793c90>,20,,,,,,,
+MLRW,,,0.64,0.7804878048780488,0.6677517361111112,0.0,0.0,0.0,0.0,1.0,1.0,0.0,PyTorchMLPWrapper(input_dim=47),,0.0,0.0,0.0,0.0,1.0,1.0,0.0
